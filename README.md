@@ -2,7 +2,7 @@
 
 一个纯 Agent / Skill 形态的吠陀占星（Vedic / Jyotish）分析系统。它把完整的八模块占星工作流——从排盘、本命分析、出生时间校准，到职业、恋爱、合盘、卜卦——打包成一套可被 AI 助手直接加载的规则库与计算脚本，无需前端、无需后端服务。
 
-> 本项目是一个 **Agent Skill**：复制到对应目录即可被 NewMax / Claude Code 等 AI 助手识别并加载。没有 Web 界面，所有交互通过 AI 对话完成。
+> 本项目是一个 **Agent Skill**：复制到对应目录即可被 Codex / Claude Code 等 AI 助手识别并加载。没有 Web 界面，所有交互通过 AI 对话完成。
 
 ## 它能做什么
 
@@ -55,10 +55,10 @@ vedic-astrology/
 
 ### 1. 安装为 Skill
 
-**NewMax**
+**Codex**
 
 ```bash
-git clone https://github.com/cindy-yuchen/vedic-astrology.git ~/.newmax/skills/vedic-astrology
+git clone https://github.com/cindy-yuchen/vedic-astrology.git ~/.codex/skills/vedic-astrology
 ```
 
 **Claude Code**
@@ -74,7 +74,7 @@ git clone https://github.com/cindy-yuchen/vedic-astrology.git ~/.claude/skills/v
 排盘依赖 Swiss Ephemeris 等天文库，**请使用一键脚本安装**（它会正确处理包冲突与星历文件）：
 
 ```bash
-cd ~/.newmax/skills/vedic-astrology   # 或你的安装目录
+cd ~/.codex/skills/vedic-astrology   # 或你的实际安装目录
 python3 scripts/setup_env.py
 ```
 
